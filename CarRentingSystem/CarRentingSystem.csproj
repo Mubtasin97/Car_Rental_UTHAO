@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1EFEFD6-2A69-4692-8DA4-35113B06EFC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarRentingSystem</RootNamespace>
+    <AssemblyName>CarRentingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminFrames\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFrames\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFrames\UserData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFrames\UserData.Designer.cs">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverForms\DriverDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverForms\DriverDashBoard.Designer.cs">
+      <DependentUpon>DriverDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverForms\DriverSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverForms\DriverSignUp.Designer.cs">
+      <DependentUpon>DriverSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverForms\DriverUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverForms\DriverUpdate.Designer.cs">
+      <DependentUpon>DriverUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraRes\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtraRes\CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BookCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\BookCar.Designer.cs">
+      <DependentUpon>BookCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\BookUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\BookUpdate.Designer.cs">
+      <DependentUpon>BookUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\LoginDb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\LoginDb.Designer.cs">
+      <DependentUpon>LoginDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\SignUpBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\SignUpBtn.Designer.cs">
+      <DependentUpon>SignUpBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\UserDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\UserDashBoard.Designer.cs">
+      <DependentUpon>UserDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\UserDetailesUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\UserDetailesUpdate.Designer.cs">
+      <DependentUpon>UserDetailesUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\UserHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\UserHistory.Designer.cs">
+      <DependentUpon>UserHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ExtraRes\CusButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserForms\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminFrames\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFrames\UserData.resx">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverForms\DriverDashBoard.resx">
+      <DependentUpon>DriverDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverForms\DriverSignUp.resx">
+      <DependentUpon>DriverSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverForms\DriverUpdate.resx">
+      <DependentUpon>DriverUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraRes\CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BookCar.resx">
+      <DependentUpon>BookCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\BookUpdate.resx">
+      <DependentUpon>BookUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\LoginDb.resx">
+      <DependentUpon>LoginDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\SignUpBtn.resx">
+      <DependentUpon>SignUpBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\UserDashBoard.resx">
+      <DependentUpon>UserDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\UserDetailesUpdate.resx">
+      <DependentUpon>UserDetailesUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\UserHistory.resx">
+      <DependentUpon>UserHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserForms\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_3177440.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_1077012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_11263140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4957136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6310507.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HideEye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openEye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6368592.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForgetPassword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForgetPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openEyeS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\na_feb_34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\useLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrator_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserDash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserDash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userDetailsUpdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookUpdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminDash-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarRentalSystemRepository\CarRentalSystemRepository.csproj">
+      <Project>{9b43cfbf-f4cd-47f7-a160-6e5d0a3da0f9}</Project>
+      <Name>CarRentalSystemRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DriverDash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookUpdate1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driverSignup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignUpBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Master.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Project Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
